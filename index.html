@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Christian Marzal della Rovere — Full-stack developer, automation specialist, trilingual builder." />
+  <title>Christian Marzal · Full-stack Builder · Automation & AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated gradient background -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-blob mesh-blob--1"></div>
+    <div class="mesh-blob mesh-blob--2"></div>
+    <div class="mesh-blob mesh-blob--3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>CM<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
+        <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="en" aria-label="English"><span class="flag">🇬🇧</span><span class="lang-code">EN</span></button>
+          <button class="lang-btn" data-lang="es" aria-label="Español"><span class="flag">🇪🇸</span><span class="lang-code">ES</span></button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français"><span class="flag">🇫🇷</span><span class="lang-code">FR</span></button>
+        </div>
+        <a href="https://github.com/superTay" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.58.11.79-.25.79-.56v-2.18c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.07 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.68.8.56C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header id="hero" class="hero">
+    <div class="container hero-container">
+      <div class="terminal" data-terminal>
+        <div class="terminal-header">
+          <span class="dot dot--red"></span>
+          <span class="dot dot--yellow"></span>
+          <span class="dot dot--green"></span>
+          <span class="terminal-title">christian@portfolio: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <!-- Lines typed by JS -->
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span data-i18n="hero.line1">Builder full-stack</span><br />
+          <span class="gradient-text" data-i18n="hero.line2">Automation & AI</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Construyo SaaS, apps móviles y workflows automatizados con IA. Trilingüe profesional (ES · EN · FR). Pre-IA formado, IA-native en ejecución.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn--primary">
+            <span data-i18n="hero.cta_projects">Ver proyectos</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost">
+            <span data-i18n="hero.cta_contact">Contacto</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span class="meta-item">
+            <span class="meta-dot meta-dot--live"></span>
+            <span data-i18n="hero.status">Disponible · Remoto global o París</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== FEATURED PROJECTS (KonquerAI) ===== -->
+  <section id="projects" class="section section--featured">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag" data-i18n="featured.tag">★ Featured · construido en solitario</span>
+        <h2 class="section-title">
+          <span data-i18n="featured.title1">El ecosistema</span>
+          <span class="gradient-text">KonquerAI</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="featured.subtitle">
+          Un SaaS de facturación completo (web + móvil + backend con IA) para autónomos españoles. Construido yo solo: 327 commits, +200 horas, en producción con usuarios reales.
+        </p>
+      </header>
+
+      <div class="grid grid--3">
+        <!-- Dashboard -->
+        <article class="card card--featured" data-card>
+          <div class="card-visual card-visual--web">
+            <span class="card-badge">SaaS · React 19 · TypeScript</span>
+            <img src="assets/konquerai-web.jpg" alt="KonquerAI Dashboard" class="card-screenshot card-screenshot--web" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="card-mockup" style="display:none;">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-row mockup-row--lg"></div>
+                <div class="mockup-row mockup-row--md"></div>
+                <div class="mockup-row mockup-row--sm"></div>
+                <div class="mockup-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">KonquerAI Dashboard</h3>
+            <p class="card-desc" data-i18n="proj.konquerai.desc">
+              SaaS multi-tenant para facturación de autónomos con cumplimiento fiscal español (VeriFactu, IVA, IRPF). Numeración atómica de factura en PL/pgSQL, RLS hardening y IA aplicada.
+            </p>
+            <div class="card-chips">
+              <span class="chip">React 19</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">n8n</span>
+              <span class="chip">PostgreSQL</span>
+            </div>
+            <div class="card-metrics">
+              <div class="metric"><span class="metric-value">327</span><span class="metric-label">commits</span></div>
+              <div class="metric"><span class="metric-value">+200h</span><span class="metric-label" data-i18n="proj.metric.hours">horas</span></div>
+              <div class="metric"><span class="metric-value">132</span><span class="metric-label">tests</span></div>
+              <div class="metric"><span class="metric-value">15</span><span class="metric-label" data-i18n="proj.metric.testers">testers</span></div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/superTay/react-web-architecture-showcase" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.code">Código (sanitizado)</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mobile -->
+        <article class="card card--featured" data-card>
+          <div class="card-visual card-visual--mobile">
+            <span class="card-badge">Mobile · Flutter</span>
+            <div class="phone-frame">
+              <img src="assets/konquerai-mobile.jpg" alt="KonquerAI Mobile app" class="phone-screenshot" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+              <div class="phone-fallback" style="display:none;">
+                <div class="phone-row phone-row--lg"></div>
+                <div class="phone-row phone-row--md"></div>
+                <div class="phone-card"></div>
+                <div class="phone-card phone-card--accent"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">KonquerAI Mobile</h3>
+            <p class="card-desc" data-i18n="proj.mobile.desc">
+              App nativa Flutter para gestión fiscal desde la obra: escáner de facturas con cámara, asistente por voz, caché offline. Build aprobado en TestFlight.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Flutter</span>
+              <span class="chip">Dart 3</span>
+              <span class="chip">Riverpod</span>
+              <span class="chip">Drift</span>
+              <span class="chip">ML Kit</span>
+            </div>
+            <div class="card-metrics">
+              <div class="metric"><span class="metric-value">28.6k</span><span class="metric-label" data-i18n="proj.metric.lines">líneas Dart</span></div>
+              <div class="metric"><span class="metric-value">108</span><span class="metric-label">commits</span></div>
+              <div class="metric"><span class="metric-value">17/17</span><span class="metric-label" data-i18n="proj.metric.tests_pass">tests</span></div>
+              <div class="metric"><span class="metric-value">15</span><span class="metric-label" data-i18n="proj.metric.testers">testers</span></div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/superTay/flutter-mobile-architecture-showcase" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.code">Código (sanitizado)</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Backend n8n -->
+        <article class="card card--featured" data-card>
+          <div class="card-visual card-visual--backend">
+            <span class="card-badge">Backend · n8n + IA</span>
+            <div class="workflow-mockup">
+              <div class="node node--1"></div>
+              <div class="node node--2"></div>
+              <div class="node node--3"></div>
+              <div class="node node--4"></div>
+              <svg class="workflow-lines" viewBox="0 0 300 200" preserveAspectRatio="none">
+                <path d="M40,40 C100,40 100,100 160,100" stroke="var(--accent-1)" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M160,100 C220,100 220,40 280,40" stroke="var(--accent-2)" stroke-width="1.5" fill="none" opacity="0.6"/>
+                <path d="M160,100 C220,100 220,160 280,160" stroke="var(--accent-3)" stroke-width="1.5" fill="none" opacity="0.6"/>
+              </svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">KonquerAI Backend (n8n)</h3>
+            <p class="card-desc" data-i18n="proj.backend.desc">
+              17 workflows en producción que orquestan OCR dual (Gemini→OpenAI), agente conversacional LangChain, ingesta de email→factura y cadena de hash VeriFactu.
+            </p>
+            <div class="card-chips">
+              <span class="chip">n8n</span>
+              <span class="chip">OpenAI</span>
+              <span class="chip">Gemini</span>
+              <span class="chip">Whisper</span>
+              <span class="chip">LangChain</span>
+            </div>
+            <div class="card-metrics">
+              <div class="metric"><span class="metric-value">17</span><span class="metric-label" data-i18n="proj.metric.workflows">workflows</span></div>
+              <div class="metric"><span class="metric-value">2×60+</span><span class="metric-label" data-i18n="proj.metric.nodes">nodos flagship</span></div>
+              <div class="metric"><span class="metric-value">~10</span><span class="metric-label" data-i18n="proj.metric.users">usuarios</span></div>
+              <div class="metric"><span class="metric-value">5</span><span class="metric-label" data-i18n="proj.metric.ai_services">servicios IA</span></div>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/superTay/konquerai-automation-backend" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.docs">Documentación</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MORE PROJECTS ===== -->
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag" data-i18n="more.tag">+ Más proyectos</span>
+        <h2 class="section-title" data-i18n="more.title">Diversidad técnica</h2>
+        <p class="section-subtitle" data-i18n="more.subtitle">
+          Cliente real, ML desde cero, dashboards de datos y backend Python. Variedad para distintos roles.
+        </p>
+      </header>
+
+      <div class="grid grid--2">
+        <article class="card card--regular" data-card>
+          <div class="card-mini-visual card-mini-visual--web">
+            <span class="card-emoji">🌿</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ceremonias Holísticas</h3>
+            <span class="card-subtitle" data-i18n="proj.ceremonias.sub">Cliente real · Mallorca</span>
+            <p class="card-desc" data-i18n="proj.ceremonias.desc">
+              Landing de conversión para facilitadora de ceremonias, diseñada en Pencil → React + Vite + Tailwind + Framer Motion. Roadmap: chatbot de reservas y automatización de blog.
+            </p>
+            <div class="card-chips">
+              <span class="chip">React 18</span>
+              <span class="chip">Tailwind</span>
+              <span class="chip">Framer Motion</span>
+              <span class="chip">Vercel</span>
+            </div>
+            <div class="card-links">
+              <a href="https://ceremonias-holisticas.vercel.app/" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.live">Demo en vivo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <a href="https://github.com/superTay/ceremonias-holisticas" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.repo">Repo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--regular" data-card>
+          <div class="card-mini-visual card-mini-visual--ml">
+            <span class="card-emoji">🧠</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Heart Disease NN</h3>
+            <span class="card-subtitle" data-i18n="proj.heart.sub">ML desde cero · ROC-AUC 0.91</span>
+            <p class="card-desc" data-i18n="proj.heart.desc">
+              Red neuronal multicapa implementada desde cero en NumPy (forward, backprop, Adam, Dropout) sin TensorFlow ni PyTorch. Validación 5-fold CV. Dashboard interactivo desplegado.
+            </p>
+            <div class="card-chips">
+              <span class="chip">NumPy</span>
+              <span class="chip">Python</span>
+              <span class="chip">scikit-learn</span>
+              <span class="chip">Streamlit</span>
+            </div>
+            <div class="card-links">
+              <a href="https://heart-disease-nn-christian.streamlit.app" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.live">Demo en vivo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <a href="https://github.com/superTay/heart-disease-risk-prediction-mlp" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.repo">Repo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--regular" data-card>
+          <div class="card-mini-visual card-mini-visual--data">
+            <span class="card-emoji">⚽</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">FIFA Player Analytics</h3>
+            <span class="card-subtitle" data-i18n="proj.fifa.sub">Dashboard de datos · 19k jugadores</span>
+            <p class="card-desc" data-i18n="proj.fifa.desc">
+              Dashboard interactivo multipágina sobre dataset FIFA 21 (19k jugadores × 106 columnas) con caching diferenciado, gestión de estado y predicción de potencial con scikit-learn.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Streamlit</span>
+              <span class="chip">Plotly</span>
+              <span class="chip">scikit-learn</span>
+              <span class="chip">pandas</span>
+            </div>
+            <div class="card-links">
+              <a href="https://fifa-player-analytics-supertay.streamlit.app/" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.live">Demo en vivo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <a href="https://github.com/SuperTay/FIFA-Player-Analytics-Dashboard-Interactive-Data-Visualization-with-Streamlit" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.repo">Repo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--regular" data-card>
+          <div class="card-mini-visual card-mini-visual--db">
+            <span class="card-emoji">📚</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BookStore ORM System</h3>
+            <span class="card-subtitle" data-i18n="proj.bookstore.sub">Python backend · SQLAlchemy</span>
+            <p class="card-desc" data-i18n="proj.bookstore.desc">
+              Sistema de gestión de librería con arquitectura por capas y patrón Repository: SQLAlchemy ORM, control de stock atómico, facturación PDF y dashboard Streamlit. MySQL.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">SQLAlchemy</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">ReportLab</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/superTay/BookStore-ORM-System" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.repo">Repo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STACK ===== -->
+  <section id="stack" class="section section--stack">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag" data-i18n="stack.tag">⚙ Stack</span>
+        <h2 class="section-title" data-i18n="stack.title">Las herramientas que domino</h2>
+        <p class="section-subtitle" data-i18n="stack.subtitle">
+          Sólo lo que he usado en proyectos serios. Si no lo pondría en producción mañana, no está aquí.
+        </p>
+      </header>
+
+      <div class="stack-grid">
+        <div class="stack-cat">
+          <h3 class="stack-cat-title" data-i18n="stack.cat.frontend">Frontend</h3>
+          <div class="stack-chips">
+            <span class="stack-chip">React 19 / 18</span>
+            <span class="stack-chip">TypeScript</span>
+            <span class="stack-chip">Vite</span>
+            <span class="stack-chip">Tailwind CSS</span>
+            <span class="stack-chip">TanStack Query</span>
+            <span class="stack-chip">Framer Motion</span>
+            <span class="stack-chip">Streamlit</span>
+          </div>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat-title" data-i18n="stack.cat.backend">Backend</h3>
+          <div class="stack-chips">
+            <span class="stack-chip">n8n</span>
+            <span class="stack-chip">Python</span>
+            <span class="stack-chip">SQLAlchemy</span>
+            <span class="stack-chip">Supabase Edge Functions</span>
+            <span class="stack-chip">Cloudflare Workers</span>
+            <span class="stack-chip">PL/pgSQL</span>
+          </div>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat-title" data-i18n="stack.cat.mobile">Mobile</h3>
+          <div class="stack-chips">
+            <span class="stack-chip">Flutter</span>
+            <span class="stack-chip">Dart 3</span>
+            <span class="stack-chip">Riverpod</span>
+            <span class="stack-chip">Drift</span>
+            <span class="stack-chip">ML Kit</span>
+            <span class="stack-chip">go_router</span>
+          </div>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat-title" data-i18n="stack.cat.data">Bases de datos</h3>
+          <div class="stack-chips">
+            <span class="stack-chip">PostgreSQL</span>
+            <span class="stack-chip">Supabase (RLS)</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">SQLite</span>
+            <span class="stack-chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat-title" data-i18n="stack.cat.ai">IA & ML</h3>
+          <div class="stack-chips">
+            <span class="stack-chip">Claude Code</span>
+            <span class="stack-chip">Antigravity</span>
+            <span class="stack-chip">OpenAI API</span>
+            <span class="stack-chip">Gemini</span>
+            <span class="stack-chip">Whisper</span>
+            <span class="stack-chip">LangChain</span>
+            <span class="stack-chip">NumPy (NN from scratch)</span>
+            <span class="stack-chip">scikit-learn</span>
+            <span class="stack-chip">OCR pipelines</span>
+          </div>
+        </div>
+
+        <div class="stack-cat">
+          <h3 class="stack-cat-title" data-i18n="stack.cat.devops">DevOps & Infra</h3>
+          <div class="stack-chips">
+            <span class="stack-chip">Git / GitHub</span>
+            <span class="stack-chip">Docker</span>
+            <span class="stack-chip">Vercel</span>
+            <span class="stack-chip">Cloudflare</span>
+            <span class="stack-chip">GitHub Actions</span>
+            <span class="stack-chip">Streamlit Cloud</span>
+            <span class="stack-chip">Linux / shell</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICS ===== -->
+  <section class="section section--metrics">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="big-metric">
+          <span class="big-metric-value" data-counter="327" data-suffix="">0</span>
+          <span class="big-metric-label" data-i18n="metric.commits">commits en el SaaS</span>
+        </div>
+        <div class="big-metric">
+          <span class="big-metric-value" data-counter="17" data-suffix="">0</span>
+          <span class="big-metric-label" data-i18n="metric.workflows">workflows n8n en producción</span>
+        </div>
+        <div class="big-metric">
+          <span class="big-metric-value" data-counter="91" data-prefix="0." data-suffix="">0</span>
+          <span class="big-metric-label" data-i18n="metric.rocauc">ROC-AUC red neuronal</span>
+        </div>
+        <div class="big-metric">
+          <span class="big-metric-value" data-counter="3" data-suffix="">0</span>
+          <span class="big-metric-label" data-i18n="metric.langs">idiomas profesionales</span>
+        </div>
+        <div class="big-metric">
+          <span class="big-metric-value" data-counter="200" data-prefix="+" data-suffix="h">0</span>
+          <span class="big-metric-label" data-i18n="metric.hours">horas en el SaaS</span>
+        </div>
+        <div class="big-metric">
+          <span class="big-metric-value" data-counter="7" data-suffix="">0</span>
+          <span class="big-metric-label" data-i18n="metric.projects">proyectos documentados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo">
+          <div class="photo-frame">
+            <img src="assets/foto_perfil.jpg" alt="Christian Marzal della Rovere" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="photo-placeholder">CM</div>
+          </div>
+          <div class="about-tags">
+            <span class="about-tag">🇪🇸 ES nativo</span>
+            <span class="about-tag">🇬🇧 EN profesional</span>
+            <span class="about-tag">🇫🇷 FR bilingüe</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag" data-i18n="about.tag">▸ Sobre mí</span>
+          <h2 class="section-title" data-i18n="about.title">No es mi primera carrera.</h2>
+          <div class="about-text">
+            <p data-i18n="about.p1">
+              Tengo perfil de <strong>cambio de carrera deliberado</strong>. Después de más de una década como concierge en hostelería de lujo internacional (Marriott Opéra y Champs-Élysées en París), decidí formarme como developer y construir un portfolio real, no de tutorial.
+            </p>
+            <p data-i18n="about.p2">
+              Llevo programando en serio desde finales de 2024 (formación intensiva en ConquerBlocks). Desde agosto de 2025 construyo proyectos propios casi a tiempo completo. <strong>Viví desde dentro la transición pre-IA → IA-native</strong>: aprendí los fundamentos picando código a mano y me adapté a los agentes en tiempo real.
+            </p>
+            <p data-i18n="about.p3">
+              Lo que me diferencia: una década de <strong>soft skills entrenadas a alto nivel</strong> (comunicación, presión, detalle, multilingüismo), cabeza de producto desde el primer día, y la capacidad de construir un SaaS completo yo solo —front, móvil, backend con IA— como demuestra el ecosistema KonquerAI.
+            </p>
+          </div>
+
+          <div class="strengths">
+            <h3 class="strengths-title" data-i18n="about.strengths_title">Lo que vale la pena saber</h3>
+            <ul class="strengths-list">
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s1">Builder solo end-to-end: SaaS + móvil + backend IA</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s2">Cumplimiento fiscal en producción (VeriFactu, IVA)</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s3">Especialidad en automatizaciones n8n + agentes IA</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s4">Trilingüe profesional con experiencia laboral real</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s5">Madurez profesional + cabeza de producto</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s6">Perpetual learner documentado mes a mes</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section--contact">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <span class="section-tag" data-i18n="contact.tag">→ Trabajemos juntos</span>
+        <h2 class="section-title">
+          <span data-i18n="contact.title">¿Construimos algo?</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">
+          Disponible para roles junior full-stack, mobile, backend o automatización. Remoto global o presencial en París / Île-de-France.
+        </p>
+      </header>
+
+      <div class="contact-grid">
+        <a href="mailto:marzaldellahome@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <span class="contact-label" data-i18n="contact.email">Email</span>
+          <span class="contact-value">marzaldellahome@gmail.com</span>
+        </a>
+        <a href="https://github.com/superTay" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.58.11.79-.25.79-.56v-2.18c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.07 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.68.8.56C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+          </div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@superTay</span>
+        </a>
+        <a href="https://www.linkedin.com/in/christian-marzal-della-rovere-3455073a7/?skipRedirect=true" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67h-3.56V9h3.42v1.56h.05c.48-.91 1.65-1.86 3.4-1.86 3.64 0 4.31 2.4 4.31 5.51v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM3.56 20.45h3.56V9H3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">/in/christian-marzal</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-text">
+        <span>© 2026 Christian Marzal della Rovere</span>
+        <span class="footer-divider">·</span>
+        <span data-i18n="footer.tagline">Builder full-stack · ES · EN · FR</span>
+      </div>
+      <div class="footer-meta">
+        <span data-i18n="footer.built">Construido con HTML + CSS + JS vanilla.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
