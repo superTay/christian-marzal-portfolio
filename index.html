@@ -96,11 +96,11 @@
           <span class="gradient-text">KonquerAI</span>
         </h2>
         <p class="section-subtitle" data-i18n="featured.subtitle">
-          Un SaaS de facturación completo (web + móvil + backend con IA) para autónomos españoles. Construido yo solo: 327 commits, +200 horas, en producción con usuarios reales.
+          Un SaaS de facturación completo (web + móvil + landing + backend con IA) para autónomos españoles. Construido yo solo: 327 commits, +200 horas, en producción con usuarios reales.
         </p>
       </header>
 
-      <div class="grid grid--3">
+      <div class="grid grid--2 grid--featured">
         <!-- Dashboard -->
         <article class="card card--featured" data-card>
           <div class="card-visual card-visual--web">
@@ -180,6 +180,54 @@
             <div class="card-links">
               <a href="https://github.com/superTay/flutter-mobile-architecture-showcase" target="_blank" rel="noopener" class="card-link">
                 <span data-i18n="proj.link.code">Código (sanitizado)</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Landing (Astro) -->
+        <article class="card card--featured" data-card>
+          <div class="card-visual card-visual--landing">
+            <span class="card-badge">Landing · Astro + Tailwind</span>
+            <img src="assets/landing.png" alt="KonquerAI landing site" class="card-screenshot card-screenshot--landing" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+            <div class="card-mockup" style="display:none;">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-content">
+                <div class="mockup-row mockup-row--lg"></div>
+                <div class="mockup-row mockup-row--md"></div>
+                <div class="mockup-row mockup-row--sm"></div>
+                <div class="mockup-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">KonquerAI Landing</h3>
+            <p class="card-desc" data-i18n="proj.landing.desc">
+              Sitio de marketing público de KonquerAI en konquerai.com. Astro + Tailwind v4 con cero JS de runtime por defecto (~25 líneas vanilla), animaciones CSS-only y SEO completo (JSON-LD, sitemap, OG).
+            </p>
+            <div class="card-chips">
+              <span class="chip">Astro 6</span>
+              <span class="chip">Tailwind v4</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Vercel</span>
+              <span class="chip">SEO</span>
+            </div>
+            <div class="card-metrics">
+              <div class="metric"><span class="metric-value">95+</span><span class="metric-label" data-i18n="proj.metric.lighthouse">Lighthouse</span></div>
+              <div class="metric"><span class="metric-value">~25</span><span class="metric-label" data-i18n="proj.metric.js_lines">líneas JS</span></div>
+              <div class="metric"><span class="metric-value">0</span><span class="metric-label" data-i18n="proj.metric.runtime_libs">libs runtime</span></div>
+              <div class="metric"><span class="metric-value">AA</span><span class="metric-label" data-i18n="proj.metric.wcag">WCAG</span></div>
+            </div>
+            <div class="card-links">
+              <a href="https://konquerai.com" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.live">Demo en vivo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+              <a href="https://github.com/superTay/konquer-landing" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.repo">Repo</span>
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
               </a>
             </div>

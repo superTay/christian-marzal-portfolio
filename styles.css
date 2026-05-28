@@ -489,6 +489,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 }
 .grid--2 { grid-template-columns: repeat(2, 1fr); }
 .grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--featured { max-width: 1040px; margin-inline: auto; }
 
 /* ===== Cards ===== */
 .card {
@@ -548,7 +549,12 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   object-position: center 35%;
   transform: scale(1.18);
 }
+.card-screenshot--landing {
+  /* Show the hero (top of the marketing page) */
+  object-position: top center;
+}
 .card:hover .card-screenshot { transform: scale(1.25); }
+.card:hover .card-screenshot--landing { transform: scale(1.06); }
 .card-visual--web {
   background: linear-gradient(135deg, rgba(0, 245, 212, 0.1) 0%, rgba(123, 97, 255, 0.1) 100%);
 }
@@ -557,6 +563,9 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 }
 .card-visual--backend {
   background: linear-gradient(135deg, rgba(123, 97, 255, 0.12) 0%, rgba(0, 245, 212, 0.08) 100%);
+}
+.card-visual--landing {
+  background: linear-gradient(135deg, rgba(0, 209, 178, 0.12) 0%, rgba(255, 138, 0, 0.08) 100%);
 }
 .card-badge {
   position: absolute;
