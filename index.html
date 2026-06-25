@@ -7,18 +7,10 @@
   <title>Christian Marzal · Full-stack Builder · Automation & AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated gradient background -->
-  <div class="bg-mesh" aria-hidden="true">
-    <div class="mesh-blob mesh-blob--1"></div>
-    <div class="mesh-blob mesh-blob--2"></div>
-    <div class="mesh-blob mesh-blob--3"></div>
-    <div class="grid-overlay"></div>
-  </div>
-
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
@@ -33,9 +25,9 @@
       </ul>
       <div class="nav-actions">
         <div class="lang-switcher">
-          <button class="lang-btn" data-lang="en" aria-label="English"><span class="flag">🇬🇧</span><span class="lang-code">EN</span></button>
-          <button class="lang-btn" data-lang="es" aria-label="Español"><span class="flag">🇪🇸</span><span class="lang-code">ES</span></button>
-          <button class="lang-btn" data-lang="fr" aria-label="Français"><span class="flag">🇫🇷</span><span class="lang-code">FR</span></button>
+          <button class="lang-btn" data-lang="en" aria-label="English"><span class="lang-code">EN</span></button>
+          <button class="lang-btn" data-lang="es" aria-label="Español"><span class="lang-code">ES</span></button>
+          <button class="lang-btn" data-lang="fr" aria-label="Français"><span class="lang-code">FR</span></button>
         </div>
         <a href="https://github.com/superTay" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.9.58.11.79-.25.79-.56v-2.18c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.47.11-3.07 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.26 5.69.41.36.78 1.07.78 2.16v3.2c0 .31.21.68.8.56C20.21 21.38 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
@@ -90,7 +82,7 @@
   <section id="projects" class="section section--featured">
     <div class="container">
       <header class="section-header">
-        <span class="section-tag" data-i18n="featured.tag">★ Featured · construido en solitario</span>
+        <span class="section-tag" data-i18n="featured.tag">Featured · construido en solitario</span>
         <h2 class="section-title">
           <span data-i18n="featured.title1">El ecosistema</span>
           <span class="gradient-text">KonquerAI</span>
@@ -206,7 +198,7 @@
           <div class="card-body">
             <h3 class="card-title">KonquerAI Landing</h3>
             <p class="card-desc" data-i18n="proj.landing.desc">
-              Sitio de marketing público de KonquerAI en konquerai.com. Astro + Tailwind v4 con cero JS de runtime por defecto (~25 líneas vanilla), animaciones CSS-only y SEO completo (JSON-LD, sitemap, OG).
+              Sitio de marketing público de KonquerAI en konquerai.com: Astro + Tailwind v4, animaciones CSS-only y SEO completo (JSON-LD, sitemap, OG). Incluye un chatbot consultor que capta y cualifica leads con preguntas de descubrimiento y les genera un informe personalizado con los beneficios del servicio, más sistema de agenda y llamadas.
             </p>
             <div class="card-chips">
               <span class="chip">Astro 6</span>
@@ -284,7 +276,7 @@
   <section class="section">
     <div class="container">
       <header class="section-header">
-        <span class="section-tag" data-i18n="more.tag">+ Más proyectos</span>
+        <span class="section-tag" data-i18n="more.tag">Más proyectos</span>
         <h2 class="section-title" data-i18n="more.title">Diversidad técnica</h2>
         <p class="section-subtitle" data-i18n="more.subtitle">
           Cliente real, ML desde cero, dashboards de datos y backend Python. Variedad para distintos roles.
@@ -294,7 +286,7 @@
       <div class="grid grid--2">
         <article class="card card--regular" data-card>
           <div class="card-mini-visual card-mini-visual--web">
-            <span class="card-emoji">🌿</span>
+            <span class="card-index">/01</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Ceremonias Holísticas</h3>
@@ -309,7 +301,7 @@
               <span class="chip">Vercel</span>
             </div>
             <div class="card-links">
-              <a href="https://ceremonias-holisticas.vercel.app/" target="_blank" rel="noopener" class="card-link">
+              <a href="https://www.oolexperience.com/" target="_blank" rel="noopener" class="card-link">
                 <span data-i18n="proj.link.live">Demo en vivo</span>
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
               </a>
@@ -323,7 +315,7 @@
 
         <article class="card card--regular" data-card>
           <div class="card-mini-visual card-mini-visual--ml">
-            <span class="card-emoji">🧠</span>
+            <span class="card-index">/02</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Heart Disease NN</h3>
@@ -352,7 +344,7 @@
 
         <article class="card card--regular" data-card>
           <div class="card-mini-visual card-mini-visual--data">
-            <span class="card-emoji">⚽</span>
+            <span class="card-index">/03</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">FIFA Player Analytics</h3>
@@ -381,7 +373,7 @@
 
         <article class="card card--regular" data-card>
           <div class="card-mini-visual card-mini-visual--db">
-            <span class="card-emoji">📚</span>
+            <span class="card-index">/04</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">BookStore ORM System</h3>
@@ -411,7 +403,7 @@
   <section id="stack" class="section section--stack">
     <div class="container">
       <header class="section-header">
-        <span class="section-tag" data-i18n="stack.tag">⚙ Stack</span>
+        <span class="section-tag" data-i18n="stack.tag">Stack</span>
         <h2 class="section-title" data-i18n="stack.title">Las herramientas que domino</h2>
         <p class="section-subtitle" data-i18n="stack.subtitle">
           Sólo lo que he usado en proyectos serios. Si no lo pondría en producción mañana, no está aquí.
@@ -540,13 +532,13 @@
             <div class="photo-placeholder">CM</div>
           </div>
           <div class="about-tags">
-            <span class="about-tag">🇪🇸 ES nativo</span>
-            <span class="about-tag">🇬🇧 EN profesional</span>
-            <span class="about-tag">🇫🇷 FR bilingüe</span>
+            <span class="about-tag">ES · nativo</span>
+            <span class="about-tag">EN · profesional</span>
+            <span class="about-tag">FR · bilingüe</span>
           </div>
         </div>
         <div class="about-content">
-          <span class="section-tag" data-i18n="about.tag">▸ Sobre mí</span>
+          <span class="section-tag" data-i18n="about.tag">Sobre mí</span>
           <h2 class="section-title" data-i18n="about.title">No es mi primera carrera.</h2>
           <div class="about-text">
             <p data-i18n="about.p1">
@@ -580,7 +572,7 @@
   <section id="contact" class="section section--contact">
     <div class="container">
       <header class="section-header section-header--center">
-        <span class="section-tag" data-i18n="contact.tag">→ Trabajemos juntos</span>
+        <span class="section-tag" data-i18n="contact.tag">Trabajemos juntos</span>
         <h2 class="section-title">
           <span data-i18n="contact.title">¿Construimos algo?</span>
         </h2>
