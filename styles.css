@@ -706,7 +706,8 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .card-mini-visual--web .card-index,
 .card-mini-visual--ml .card-index,
 .card-mini-visual--data .card-index,
-.card-mini-visual--db .card-index { color: var(--ink-3); }
+.card-mini-visual--db .card-index,
+.card-mini-visual--bot .card-index { color: var(--ink-3); }
 
 /* ===== Stack section ===== */
 .section--stack { background: var(--paper-sunk); }
