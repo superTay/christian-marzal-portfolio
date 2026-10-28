@@ -23,7 +23,7 @@
 
 ## 🪪 What it is
 
-Personal portfolio site for **[Christian Marzal della Rovere](https://github.com/superTay)** — junior full-stack developer, automation specialist and trilingual builder. Single-page application built from scratch with **vanilla HTML, CSS and JavaScript** — no framework, no bundler, no build step. The whole site is three files plus assets, served as static.
+Personal portfolio site for **[Christian Marzal della Rovere](https://github.com/superTay)** — web developer and AI automation consultant for small businesses, trilingual ES · EN · FR. Single-page application built from scratch with **vanilla HTML, CSS and JavaScript** — no framework, no bundler, no build step. The whole site is three files plus assets, served as static.
 
 The repo is also a small craft demo: it shows what I can do with the platform primitives alone — animated mesh gradients, a terminal typewriter, IntersectionObserver scroll-reveal, animated metric counters, runtime i18n in three languages, and a design system in pure CSS custom properties.
 
@@ -162,7 +162,7 @@ Live at **[christian-marzal-portfolio.vercel.app](https://christian-marzal-portf
 
 <br>
 
-Sitio personal de **[Christian Marzal della Rovere](https://github.com/superTay)** — full-stack junior, especialista en automatizaciones y builder trilingüe. Single-page hecho desde cero con **HTML + CSS + JavaScript vanilla** — sin framework, sin bundler, sin paso de build. Tres archivos más assets, servidos como estáticos.
+Sitio personal de **[Christian Marzal della Rovere](https://github.com/superTay)** — desarrollador web y consultor de automatización con IA para pymes, trilingüe ES · EN · FR. Single-page hecho desde cero con **HTML + CSS + JavaScript vanilla** — sin framework, sin bundler, sin paso de build. Tres archivos más assets, servidos como estáticos.
 
 El repo es también una pequeña demo de oficio: enseña lo que puedo hacer con las primitivas de la plataforma — mesh gradients animados, terminal con efecto typewriter, scroll-reveal con `IntersectionObserver`, contadores animados, i18n runtime en tres idiomas y un design system en CSS custom properties.
 
