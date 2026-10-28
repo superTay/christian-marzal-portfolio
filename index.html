@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Christian Marzal della Rovere — Full-stack developer, automation specialist, trilingual builder." />
-  <title>Christian Marzal · Full-stack Builder · Automation & AI</title>
+  <meta name="description" content="Christian Marzal della Rovere — Diseño web, automatizaciones con IA y consultoría IA para pymes y autónomos. Trilingüe ES · EN · FR." />
+  <title>Christian Marzal · Webs y automatizaciones con IA para pymes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -18,6 +18,7 @@
         <span class="logo-bracket">&lt;</span>CM<span class="logo-bracket">/&gt;</span>
       </a>
       <ul class="nav-links">
+        <li><a href="#services" data-i18n="nav.services">Servicios</a></li>
         <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
         <li><a href="#stack" data-i18n="nav.stack">Stack</a></li>
         <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
@@ -53,15 +54,15 @@
 
       <div class="hero-content">
         <h1 class="hero-title">
-          <span data-i18n="hero.line1">Builder full-stack</span><br />
-          <span class="gradient-text" data-i18n="hero.line2">Automation & AI</span>
+          <span data-i18n="hero.line1">Webs y automatizaciones con IA</span><br />
+          <span class="gradient-text" data-i18n="hero.line2">para pymes y autónomos</span>
         </h1>
         <p class="hero-subtitle" data-i18n="hero.subtitle">
-          Construyo SaaS, apps móviles y workflows automatizados con IA. Trilingüe profesional (ES · EN · FR). Pre-IA formado, IA-native en ejecución.
+          Diseño webs que traen clientes y construyo automatizaciones con IA que quitan trabajo manual. Trilingüe (ES · EN · FR), con sistemas en producción y clientes reales.
         </p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn--primary">
-            <span data-i18n="hero.cta_projects">Ver proyectos</span>
+            <span data-i18n="hero.cta_projects">Ver trabajos</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </a>
           <a href="#contact" class="btn btn--ghost">
@@ -71,12 +72,72 @@
         <div class="hero-meta">
           <span class="meta-item">
             <span class="meta-dot meta-dot--live"></span>
-            <span data-i18n="hero.status">Disponible · Remoto global o París</span>
+            <span data-i18n="hero.status">Disponible para proyectos · Remoto</span>
           </span>
         </div>
       </div>
     </div>
   </header>
+
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag" data-i18n="services.tag">Servicios</span>
+        <h2 class="section-title" data-i18n="services.title">Lo que puedo hacer por tu negocio</h2>
+        <p class="section-subtitle" data-i18n="services.subtitle">
+          Tres formas de trabajar juntos, sin humo y con sistemas que ya están en producción.
+        </p>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="card card--regular" data-card>
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="services.web.title">Diseño y desarrollo web</h3>
+            <p class="card-desc" data-i18n="services.web.desc">
+              Webs rápidas, bien posicionadas y pensadas para conseguir clientes: desde una landing hasta la web completa de tu negocio. konquerai.com, livingone.es y oolexperience.com son trabajo mío.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Astro</span>
+              <span class="chip">React</span>
+              <span class="chip">Tailwind</span>
+              <span class="chip">SEO</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--regular" data-card>
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="services.auto.title">Automatización e IA</h3>
+            <p class="card-desc" data-i18n="services.auto.desc">
+              Chatbots que responden a tus clientes, bots de WhatsApp y workflows que eliminan tareas repetitivas. En producción: un bot de WhatsApp para un grupo de spas y 17 workflows automatizando facturación.
+            </p>
+            <div class="card-chips">
+              <span class="chip">n8n</span>
+              <span class="chip">WhatsApp Cloud API</span>
+              <span class="chip">OpenAI</span>
+              <span class="chip">Supabase</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--regular" data-card>
+          <div class="card-body">
+            <h3 class="card-title" data-i18n="services.consult.title">Consultoría IA para pymes</h3>
+            <p class="card-desc" data-i18n="services.consult.desc">
+              Vemos juntos dónde la IA te ahorra horas cada semana y lo ponemos en marcha. Sin tecnicismos y sin venderte nada que no necesites.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Auditoría</span>
+              <span class="chip">Implantación</span>
+              <span class="chip">Acompañamiento</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== FEATURED PROJECTS (KonquerAI) ===== -->
   <section id="projects" class="section section--featured">
@@ -88,7 +149,7 @@
           <span class="gradient-text">KonquerAI</span>
         </h2>
         <p class="section-subtitle" data-i18n="featured.subtitle">
-          Un SaaS de facturación completo (web + móvil + landing + backend con IA) para autónomos españoles. Construido yo solo: 327 commits, +200 horas, en producción con usuarios reales.
+          Un SaaS de facturación completo (web + móvil + landing + backend con IA) para autónomos españoles. Construido yo solo: 1.062 commits, +200 horas, en producción con usuarios reales.
         </p>
       </header>
 
@@ -123,7 +184,7 @@
               <span class="chip">PostgreSQL</span>
             </div>
             <div class="card-metrics">
-              <div class="metric"><span class="metric-value">327</span><span class="metric-label">commits</span></div>
+              <div class="metric"><span class="metric-value">668</span><span class="metric-label">commits</span></div>
               <div class="metric"><span class="metric-value">+200h</span><span class="metric-label" data-i18n="proj.metric.hours">horas</span></div>
               <div class="metric"><span class="metric-value">132</span><span class="metric-label">tests</span></div>
               <div class="metric"><span class="metric-value">15</span><span class="metric-label" data-i18n="proj.metric.testers">testers</span></div>
@@ -165,7 +226,7 @@
             </div>
             <div class="card-metrics">
               <div class="metric"><span class="metric-value">28.6k</span><span class="metric-label" data-i18n="proj.metric.lines">líneas Dart</span></div>
-              <div class="metric"><span class="metric-value">108</span><span class="metric-label">commits</span></div>
+              <div class="metric"><span class="metric-value">394</span><span class="metric-label">commits</span></div>
               <div class="metric"><span class="metric-value">17/17</span><span class="metric-label" data-i18n="proj.metric.tests_pass">tests</span></div>
               <div class="metric"><span class="metric-value">15</span><span class="metric-label" data-i18n="proj.metric.testers">testers</span></div>
             </div>
@@ -279,7 +340,7 @@
         <span class="section-tag" data-i18n="more.tag">Más proyectos</span>
         <h2 class="section-title" data-i18n="more.title">Diversidad técnica</h2>
         <p class="section-subtitle" data-i18n="more.subtitle">
-          Cliente real, automatización con IA, ML desde cero y backend Python. Variedad para distintos roles.
+          Webs y bots para clientes reales, más proyectos técnicos que muestran cómo trabajo.
         </p>
       </header>
 
@@ -310,8 +371,32 @@
         </article>
 
         <article class="card card--regular" data-card>
-          <div class="card-mini-visual card-mini-visual--web">
+          <div class="card-mini-visual card-mini-visual--data">
             <span class="card-index">/02</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Living One Peñíscola</h3>
+            <span class="card-subtitle" data-i18n="proj.livingone.sub">Cliente real · Web de hotel</span>
+            <p class="card-desc" data-i18n="proj.livingone.desc">
+              Web para un B&B en Peñíscola orientada a reserva directa, con copywriting persuasivo y diseño responsive. El hotel suma un 8,5/10 en Booking con más de 1.300 reseñas.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Web responsive</span>
+              <span class="chip">SEO local</span>
+              <span class="chip">Copywriting</span>
+            </div>
+            <div class="card-links">
+              <a href="https://livingone.es" target="_blank" rel="noopener" class="card-link">
+                <span data-i18n="proj.link.live">Demo en vivo</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--regular" data-card>
+          <div class="card-mini-visual card-mini-visual--web">
+            <span class="card-index">/03</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Ceremonias Holísticas</h3>
@@ -340,7 +425,7 @@
 
         <article class="card card--regular" data-card>
           <div class="card-mini-visual card-mini-visual--ml">
-            <span class="card-index">/03</span>
+            <span class="card-index">/04</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">Heart Disease NN</h3>
@@ -369,7 +454,7 @@
 
         <article class="card card--regular" data-card>
           <div class="card-mini-visual card-mini-visual--db">
-            <span class="card-index">/04</span>
+            <span class="card-index">/05</span>
           </div>
           <div class="card-body">
             <h3 class="card-title">BookStore ORM System</h3>
@@ -491,7 +576,7 @@
     <div class="container">
       <div class="metrics-grid">
         <div class="big-metric">
-          <span class="big-metric-value" data-counter="327" data-suffix="">0</span>
+          <span class="big-metric-value" data-counter="1062" data-suffix="">0</span>
           <span class="big-metric-label" data-i18n="metric.commits">commits en el SaaS</span>
         </div>
         <div class="big-metric">
@@ -538,25 +623,25 @@
           <h2 class="section-title" data-i18n="about.title">No es mi primera carrera.</h2>
           <div class="about-text">
             <p data-i18n="about.p1">
-              Tengo perfil de <strong>cambio de carrera deliberado</strong>. Después de más de una década como concierge en hostelería de lujo internacional (Marriott Opéra y Champs-Élysées en París), decidí formarme como developer y construir un portfolio real, no de tutorial.
+              Vengo de la <strong>hostelería de lujo</strong>: más de una década como concierge en París (Marriott Opéra y Champs-Élysées), atendiendo cada día a clientes muy exigentes. Hoy pongo ese trato y ese ojo por el detalle al servicio de pymes y autónomos.
             </p>
             <p data-i18n="about.p2">
-              Llevo programando en serio desde finales de 2024 (formación intensiva en ConquerBlocks). Desde agosto de 2025 construyo proyectos propios casi a tiempo completo. <strong>Viví desde dentro la transición pre-IA → IA-native</strong>: aprendí los fundamentos picando código a mano y me adapté a los agentes en tiempo real.
+              Me formé como desarrollador en 2024 (ConquerBlocks) y desde entonces construyo sistemas reales: webs para clientes, bots de WhatsApp y un SaaS propio con 17 automatizaciones en producción. <strong>Trabajo con IA a diario y sé explicarla sin tecnicismos.</strong>
             </p>
             <p data-i18n="about.p3">
-              Lo que me diferencia: una década de <strong>soft skills entrenadas a alto nivel</strong> (comunicación, presión, detalle, multilingüismo), cabeza de producto desde el primer día, y la capacidad de construir un SaaS completo yo solo —front, móvil, backend con IA— como demuestra el ecosistema KonquerAI.
+              Lo que me diferencia: hablo tu idioma, entiendo el negocio antes que la tecnología y construyo yo mismo lo que propongo. Si algo no te ahorra tiempo o no te trae clientes, no te lo propongo.
             </p>
           </div>
 
           <div class="strengths">
-            <h3 class="strengths-title" data-i18n="about.strengths_title">Lo que vale la pena saber</h3>
+            <h3 class="strengths-title" data-i18n="about.strengths_title">Por qué trabajar conmigo</h3>
             <ul class="strengths-list">
-              <li><span class="strength-icon">◆</span><span data-i18n="about.s1">Builder solo end-to-end: SaaS + móvil + backend IA</span></li>
-              <li><span class="strength-icon">◆</span><span data-i18n="about.s2">Cumplimiento fiscal en producción (VeriFactu, IVA)</span></li>
-              <li><span class="strength-icon">◆</span><span data-i18n="about.s3">Especialidad en automatizaciones n8n + agentes IA</span></li>
-              <li><span class="strength-icon">◆</span><span data-i18n="about.s4">Trilingüe profesional con experiencia laboral real</span></li>
-              <li><span class="strength-icon">◆</span><span data-i18n="about.s5">Madurez profesional + cabeza de producto</span></li>
-              <li><span class="strength-icon">◆</span><span data-i18n="about.s6">Perpetual learner documentado mes a mes</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s1">Construyo yo mismo: web, móvil y automatizaciones</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s2">Sistemas en producción con clientes reales</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s3">Especialista en n8n, chatbots y agentes de IA</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s4">Trilingüe: español, inglés y francés</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s5">Una década de atención al cliente de lujo</span></li>
+              <li><span class="strength-icon">◆</span><span data-i18n="about.s6">Comunicación clara, sin tecnicismos</span></li>
             </ul>
           </div>
         </div>
@@ -573,7 +658,7 @@
           <span data-i18n="contact.title">¿Construimos algo?</span>
         </h2>
         <p class="section-subtitle" data-i18n="contact.subtitle">
-          Disponible para roles junior full-stack, mobile, backend o automatización. Remoto global o presencial en París / Île-de-France.
+          ¿Tienes una pyme o eres autónomo? Cuéntame qué te quita tiempo o qué quieres conseguir con tu web, y te propongo algo concreto. Trabajo en remoto con España y Francia.
         </p>
       </header>
 
@@ -609,7 +694,7 @@
       <div class="footer-text">
         <span>© 2026 Christian Marzal della Rovere</span>
         <span class="footer-divider">·</span>
-        <span data-i18n="footer.tagline">Builder full-stack · ES · EN · FR</span>
+        <span data-i18n="footer.tagline">Webs · Automatización IA · ES · EN · FR</span>
       </div>
       <div class="footer-meta">
         <span data-i18n="footer.built">Construido con HTML + CSS + JS vanilla.</span>
